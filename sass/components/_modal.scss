@@ -170,17 +170,28 @@ margin-right: 8px;
   position: relative;
   margin-left: 3px;
   color: $primary-accent;
-}
-.terms-link::after {
-  position: absolute;
-  bottom: 6px;
-  left: 0px;
 
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $primary-accent;
+  &::after {
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+  
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $primary-accent;
+  }
 }
+// .terms-link::after {
+//   position: absolute;
+//   bottom: 6px;
+//   left: 0px;
+
+//   content: "";
+//   width: 100%;
+//   height: 1px;
+//   background-color: $primary-accent;
+// }
 .button.send {
   width: 200px;
 }

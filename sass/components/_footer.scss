@@ -103,18 +103,30 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-.subscription__button::after {
-  display: inline-block;
-  transform: translateY(25%);
-  margin-left: 10px;
 
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/send.svg);
-  background-size: contain;
+  &::after {
+    display: inline-block;
+    transform: translateY(25%);
+    margin-left: 10px;
+  
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/send.svg);
+    background-size: contain;
+  }
 }
+// .subscription__button::after {
+//   display: inline-block;
+//   transform: translateY(25%);
+//   margin-left: 10px;
+
+//   content: "";
+//   width: 24px;
+//   height: 24px;
+//   background-image: url(../images/send.svg);
+//   background-size: contain;
+// }
 .subscription__button:hover {
   background-color: #188CE8;
 }
