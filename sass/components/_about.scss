@@ -1,0 +1,45 @@
+.about {
+  padding-bottom: 94px;
+}
+.about__container {
+  @extend %container;
+}
+.about-list {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.about-list__element {
+  position: relative;
+  margin-right: 30px;
+  height: 294px;
+}
+.about-element:nth-child(3) {
+  margin-right: 0;
+}
+.about-list__container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);;
+}
+.about__heading {
+  @extend %heading;
+}
+.about-list__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-accent;
+}

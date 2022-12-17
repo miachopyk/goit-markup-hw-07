@@ -1,0 +1,39 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @extend %container;
+}
+.address-nav {
+  display: flex;
+  padding-left: 0px;
+  margin-left: auto;
+}
+.address-nav__link {
+  display: flex;
+  align-items: center;
+  color: $main-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.address-nav__link:not(:last-child) {
+  margin-right: 50px;
+}
+.address-nav__icon {
+  margin-right: 10px;
+  align-content: center;
+  fill: currentColor;
+}
+.address-nav__link:hover,
+.address-nav__link:focus,
+.address-details:hover,
+.address-details:focus {
+  color: $primary-accent;
+}

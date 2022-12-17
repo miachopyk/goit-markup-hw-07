@@ -1,0 +1,120 @@
+.footer__container {
+  display: flex;
+
+  @extend %container;
+}
+.logo--footer {
+  display: inline-block;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg;
+}
+
+
+.footer-info {
+  margin-right: 70px;
+}
+.footer-address__place {
+  color: $secondary-accent;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-address__contacts {
+  color: $address;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.footer-address__details:not(:last-child) {
+  margin-bottom: 9px;
+}
+.join {
+  padding-top: 12px;
+  margin-right: 93px;
+}
+.join__heading {
+  margin-bottom: 20px;
+  color: $secondary-accent;
+  @extend %heading-secondary;
+}
+.join__links {
+  display: flex;
+  align-items: center;
+}
+.join__social {
+  @include display;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: $secondary-accent;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join__button {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.join__social:not(:last-child) {
+  margin-right: 10px;
+}
+.join__social:hover,
+.join__social:focus {
+  background-color: $primary-accent;
+}
+.subscription {
+  padding-top: 12px;
+}
+.subscription__heading {
+  margin-bottom: 20px;
+  color: $secondary-accent;
+  @extend %heading-secondary;
+}
+.subscription__input {
+  padding: 15px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  background-color: $footer-bg;
+  color: $secondary-accent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscription__button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: $secondary-accent;
+  background-color: $primary-accent;
+  border: 0px solid $primary-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscription__button::after {
+  display: inline-block;
+  transform: translateY(25%);
+  margin-left: 10px;
+
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/send.svg);
+  background-size: contain;
+}
+.subscription__button:hover {
+  background-color: #188CE8;
+}
