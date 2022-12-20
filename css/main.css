@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -788,7 +788,6 @@ textarea {
 }
 
 .portfolio-item__description {
-  margin: 0;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
