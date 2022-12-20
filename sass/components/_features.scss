@@ -20,6 +20,10 @@
 }
 .features-list__element {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .features-list__icon {
   @include display;
@@ -29,7 +33,4 @@
 
   background-color: $additional-grey;
   border-radius: 4px;
-}
-.features-list__element:not(:last-child) {
-  margin-right: 30px;
 }

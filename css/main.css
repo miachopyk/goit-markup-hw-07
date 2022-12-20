@@ -1,6 +1,7 @@
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 a {
@@ -34,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .clients__heading, .team__heading, .about__heading {
-  margin-bottom: 50px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -102,9 +102,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .address-nav__link:not(:last-child) {
   margin-right: 50px;
+}
+.address-nav__link:hover, .address-nav__link:focus {
+  color: #2196f3;
 }
 
 .address-nav__icon {
@@ -113,20 +115,9 @@ h1, h2, h3, h4, h5, h6 {
   fill: currentColor;
 }
 
-.address-nav__link:hover,
-.address-nav__link:focus,
-.address-details:hover,
-.address-details:focus {
-  color: #2196f3;
-}
-
 .nav {
   display: flex;
   margin: 0px;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav__link {
@@ -153,14 +144,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2196f3;
   border-radius: 2px;
 }
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+}
 
 .nav__item {
   position: relative;
 }
-
-.nav__link:hover,
-.nav__link:focus {
-  color: #2196f3;
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .hero {
@@ -208,7 +200,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: #188CE8;
 }
@@ -235,6 +226,9 @@ h1, h2, h3, h4, h5, h6 {
 .features-list__element {
   width: 270px;
 }
+.features-list__element:not(:last-child) {
+  margin-right: 30px;
+}
 
 .features-list__icon {
   display: flex;
@@ -244,10 +238,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.features-list__element:not(:last-child) {
-  margin-right: 30px;
 }
 
 .about {
@@ -351,21 +341,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-links__social:not(:last-child) {
+  margin-right: 10px;
+}
+.team-links__social:hover, .team-links__social:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
 
 .team-links__button {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.team-links__social:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-links__social:hover,
-.team-links__social:focus {
-  background-color: #2196f3;
-  color: #ffffff;
 }
 
 .clients {
@@ -389,17 +376,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__link:hover, .clients__link:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
 
 .clients__logo {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  color: #2196f3;
-  border: 1px solid #2196f3;
 }
 
 .footer__container {
@@ -467,20 +452,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.join__social:not(:last-child) {
+  margin-right: 10px;
+}
+.join__social:hover, .join__social:focus {
+  background-color: #2196f3;
+}
 
 .join__button {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.join__social:not(:last-child) {
-  margin-right: 10px;
-}
-
-.join__social:hover,
-.join__social:focus {
-  background-color: #2196f3;
 }
 
 .subscription {
@@ -527,7 +509,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../images/send.svg);
   background-size: contain;
 }
-
 .subscription__button:hover {
   background-color: #188CE8;
 }
@@ -577,7 +558,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   cursor: pointer;
 }
-
 .close-button:hover .close-icon {
   fill: #2196f3;
 }
@@ -616,7 +596,6 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-
 .input-box:not(:first-child) {
   margin-top: 10px;
 }
@@ -630,8 +609,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
-.input-area:focus, .input-comment:focus {
+.input-area:focus {
   border: 1px solid #2196f3;
   outline: none;
 }
@@ -647,21 +625,22 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
+.input-comment:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
 .input-comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .input-comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .input-comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -700,7 +679,6 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .box:checked + .check-icon {
   background-color: #2196f3;
   background-image: url(../images/icon-check.svg);
@@ -749,7 +727,6 @@ textarea {
 .button.send {
   width: 200px;
 }
-
 .button.send:hover {
   background-color: #188CE8;
 }
@@ -780,17 +757,13 @@ textarea {
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-item:nth-child(3n+3) {
   margin-right: 0;
 }
-
 .portfolio-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item:hover, .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -815,6 +788,7 @@ textarea {
 }
 
 .portfolio-item__description {
+  margin: 0;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
@@ -823,7 +797,6 @@ textarea {
 .portfolio-item__additional {
   position: relative;
 }
-
 .portfolio-item__additional:hover .active-overlay {
   position: absolute;
   transform: translateX(0);
@@ -884,9 +857,7 @@ textarea {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-filter__button:hover,
-.portfolio-filter__button:focus {
+.portfolio-filter__button:hover, .portfolio-filter__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

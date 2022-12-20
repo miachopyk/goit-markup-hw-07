@@ -16,7 +16,8 @@
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
-}
-.button:hover {
+
+  &:hover {
   background-color: #188CE8;
+  }
 }

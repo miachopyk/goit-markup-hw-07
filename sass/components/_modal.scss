@@ -42,9 +42,10 @@
   border-radius: 50px;
 
   cursor: pointer;
-}
-.close-button:hover .close-icon {
-  fill: $primary-accent;
+
+  &:hover .close-icon {
+    fill: $primary-accent;
+  }
 }
 .close-icon {
   position: absolute;
@@ -76,9 +77,10 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-.input-box:not(:first-child) {
-  margin-top: 10px;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 .input-area {
   height: 40px;
@@ -88,10 +90,11 @@ textarea {
   padding-right: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.input-area:focus, .input-comment:focus {
-  border: 1px solid $primary-accent;
-  outline: none;
+
+  &:focus {
+    border: 1px solid $primary-accent;
+    outline: none;
+  }
 }
 .input-area:focus + .input-icon {
   fill: $primary-accent;
@@ -103,13 +106,17 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-}
-.input-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border: 1px solid $primary-accent;
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .input-icon {
   position: absolute;
@@ -139,15 +146,16 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.box:checked + .check-icon {
-  background-color: $primary-accent;
-  background-image: url(../images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid $primary-accent;
-  border-radius: 3px;
+
+  &:checked + .check-icon {
+    background-color: $primary-accent;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    border: 2px solid $primary-accent;
+    border-radius: 3px;
+  }
 }
 .conditions {
   display: flex;
@@ -182,19 +190,9 @@ margin-right: 8px;
     background-color: $primary-accent;
   }
 }
-// .terms-link::after {
-//   position: absolute;
-//   bottom: 6px;
-//   left: 0px;
-
-//   content: "";
-//   width: 100%;
-//   height: 1px;
-//   background-color: $primary-accent;
-// }
 .button.send {
   width: 200px;
-}
-.button.send:hover {
-  background-color: #188CE8;
+  &:hover {
+    background-color: #188CE8;
+  }
 }
