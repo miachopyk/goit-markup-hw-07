@@ -42,7 +42,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="address-link">
+          <li class="address-nav__link">
             <a href="tel:+380961111111" class="address-nav__link">
               <svg class="address-nav__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -57,7 +57,7 @@
     <section class="hero">
       <div class="hero__container">
         <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button" data-modal-open>Замовити послугу</button>
+        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- Особливості -->
@@ -381,42 +381,42 @@
           </svg>
         </button>
         <h2 class="heading-modal">Залиште свої дані, ми вам передзвонимо</h2>
-        <form>
-          <div class="input-box">
-            <label for="name" class="input-names">Ім'я</label>
-            <input class="input-area" type="name" name="name" id="name" placeholder=" ">
-            <svg class="input-icon">
+        <form class="form">
+          <div class="form__input-box">
+            <label for="name" class="form__input-names">Ім'я</label>
+            <input class="form__input-area" type="name" name="name" id="name" placeholder=" ">
+            <svg class="form__input-icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
-          <div class="input-box">
-            <label for="tel" class="input-names">Телефон</label>
-          <input class="input-area" type="tel" name="phone" id="tel" placeholder=" ">
-          <svg class="input-icon">
+          <div class="form__input-box">
+            <label for="tel" class="form__input-names">Телефон</label>
+          <input class="form__input-area" type="tel" name="phone" id="tel" placeholder=" ">
+          <svg class="form__input-icon">
             <use href="./images/symbol-defs.svg#icon-phone"></use>
           </svg>
           </div>
-          <div class="input-box">
-            <label for="mail" class="input-names">Пошта</label>
-          <input class="input-area" type="email" name="mail" id="mail" placeholder=" ">
-          <svg class="input-icon">
+          <div class="form__input-box">
+            <label for="mail" class="form__input-names">Пошта</label>
+          <input class="form__input-area" type="email" name="mail" id="mail" placeholder=" ">
+          <svg class="form__input-icon">
             <use href="./images/symbol-defs.svg#icon-email"></use>
           </svg>
           </div>
-          <div class="input-box">
-            <label for="comment" class="input-names">Коментар</label>
-          <textarea class="input-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          <div class="form__input-box">
+            <label for="comment" class="form__input-names">Коментар</label>
+          <textarea class="form__input-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </div>
 
           <div class="conditions">
-            <label class="terms">
-              <input class="box" type="checkbox">
-              <span class="check-icon">
+            <label class="conditions__terms">
+              <input class="conditions__box" type="checkbox">
+              <span class="conditions__check-icon">
               </span>
-              Погоджуюся з розсилкою та приймаю <a class="terms-link" href="">Умови договору</a>
+              Погоджуюся з розсилкою та приймаю <a class="conditions__terms-link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="button send" type="submit">Відправити</button>
+          <button class="conditions__button-send" type="submit">Відправити</button>
         </form>
       </div>
     </div>

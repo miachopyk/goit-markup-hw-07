@@ -35,3 +35,6 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+.hero__button {
+  @extend %button;
+}
